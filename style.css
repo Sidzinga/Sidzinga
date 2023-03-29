@@ -1,0 +1,242 @@
+.container {
+    /* background-color: darkolivegreen; */
+    background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    width: 100%;
+  height: 400px;
+    margin: auto;
+    margin-top: 18%;
+    animation-name: container;
+    animation-duration:7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+  
+  
+  }
+  .container:hover{ 
+    animation-name: container1;
+    animation-duration:7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    font-size:large;
+    font-style: italic;
+  
+  }
+  .box1 {
+    width: 600px;
+    height: 240px;
+    background-color: aqua;
+    font-size: 45px;
+    color: beige;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    animation-name: box1;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    /* position: relative; */
+  
+  }
+  .box2 {
+    width: 600px;
+    height: 240px;
+    background-color: rgb(46, 243, 79);
+    font-size: 45px;
+    color: beige;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    text-align: center;
+    padding-top: 50px;
+    animation-name: box2;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    /* position: relative; */
+    
+  }
+  .box3 {
+    width: 600px;
+    height: 240px;
+    background-color: rgb(255, 0, 255);
+    font-size: 45px;
+    color: beige;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    animation-name: box3;
+    animation-duration:4.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    /* position: relative; */
+    
+  }
+  .box4 {
+    width: 600px;
+    height: 240px;
+    background-color: rgb(217, 255, 0);
+    font-size: 45px;
+    color: beige;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    animation-name: box4;
+    animation-duration:8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    /* position: relative; */
+    
+  }
+  h2 {
+    vertical-align: middle; 
+    align-items: center;
+  }
+  .image{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBr_zAgOfYTXJ7utM-XplMAqYfKkj_NnI-2w&usqp=CAU);
+    width: 30%;
+    background-repeat: no-repeat;
+    animation-name: image;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  .txt{
+    width: 50%;
+    margin: auto;
+    margin-top: 300px;
+    border: 4px solid #eb1c49;
+    overflow-x: hidden;
+    text-align: center;
+  }
+  .move{
+    animation: rightToLeft 9s linear infinite;
+  }
+  @keyframes box1{
+      0%   {background-color:aqua;
+      margin-top: 6%;
+      }
+  /* 12.5%{margin-top: }
+      25%  {background-color:rgb(217, 255, 0);
+          margin-top: ;}
+          37.5%{margin-top: }
+      50%  {background-color:(255, 0, 255);
+      margin-top: ;}
+      62.5%{margin-top: }
+      75%  {background-color:rgb(46, 243, 79);
+      margin-top:;}
+      87.5%{margin-top: ;} */
+      100% {background-color:red;
+          margin-top: -6%;}
+    }
+    @keyframes box2{
+      0%   {background-color:rgb(46, 243, 79);
+          margin-top: 6%;
+      }
+      /* 12.5%{margin-top: }
+      25%  {background-color:aqua;
+          margin-top: ;}
+          37.5%{margin-top: } */
+      50%  {background-color:rgb(217, 255, 0);
+      margin-top: -6%;}
+  /* 62.5%{margin-top: }
+      75%  {background-color:(255, 0, 255);
+          margin-top: ;}
+          87.5%{margin-top: } */
+      100% {background-color:rgb(46, 243, 79);
+          margin-top: 6%;}
+    }
+    @keyframes box3{
+      0%   {background-color:red;
+          margin-top: 6%;
+      }
+      /* 12.5%{margin-top: } */
+      25%  {background-color:yellow;
+          margin-top: -6%;}
+          /* 37.5%{margin-top: } */
+      50%  {background-color:rgb(46, 243, 79);
+          margin-top: 6%;}
+          /* 62.5%{margin-top: } */
+      75%  {background-color:rgb(217, 255, 0);
+          margin-top: -6%;
+          }
+          /* 87.5%{margin-top: } */
+      100% {background-color:(255, 0, 255);
+          margin-top: 6%}
+    }
+    @keyframes box4{
+      0%   {background-color:rgb(217, 255, 0);
+          margin-top: 6%;
+      }
+      12.5%{margin-top:-6%;}
+      25%  {background-color:rgb(255, 0, 255);
+          margin-top: 6%;}
+  37.5%{margin-top: -6%;}
+      50%  {background-color:rgb(46, 243, 79);
+          margin-top:6%;}
+          62.5%{margin-top:-6%;}
+      75%  {background-color:purple;
+          margin-top:6%;}
+          87.5%{margin-top:-6% ;}
+      100% {background-color:aqua;
+          margin-top: 6%;}
+      }
+      @keyframes container {
+          0%{background: linear-gradient(90deg, rgb(238, 100, 36) 0%, rgb(76, 247, 204) 35%, rgb(49, 44, 48) 100%);
+           ;}
+          100%{background: linear-gradient(90deg, rgb(76, 131, 212) 0%, rgb(43, 187, 79) 35%, rgba(206, 195, 49, 0.993) 100%);}
+      }
+      @keyframes image{
+  0%{
+        width:30%;
+        background-repeat: no-repeat;
+        margin-top: 6%;
+        transform: rotate(6deg);
+        margin-left: 50%;
+        top:30%;
+  }
+  37.5% { transform: rotate(-6deg); }
+  87.5% { transform: rotate(6deg); }
+      100%{
+          width:30%;
+        background-repeat: no-repeat;
+          margin-top: -6%;
+          transform: rotate(-6deg); 
+          margin-left: 0%;
+    } }
+    @keyframes .container1 {
+      0%{ margin-left: 0%
+  
+      }
+      25%{ margin-left: 0%
+  
+      }
+      50%{ margin-left: 0%
+  
+      }
+      75%{ margin-left: 0%
+  
+      }
+      100%{ margin-left: 0% margin-left: 0%
+        
+      }
+    }
+    @keyframes rightToLeft {
+      0% {
+        transform: translateX(200px);
+      }
+      100% {
+        transform: translateX(-160px);
+      }
+    }
